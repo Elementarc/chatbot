@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div class="all_container">
+        <div class="login_container" id="login_container">
+            <div class="login_content">
+
+                <div class="login_inputs_container login_inputs_container_first">
+                    <h1>Username</h1>
+                    <input  type="text" id="username_input" placeholder="Max. 12 Characters" autocomplete="new-password">
+                    <p class="username_input_error_message" id="username_input_error_message"></p>
+                </div>
+
+                <div class="login_inputs_container login_inputs_container_last">
+                    <h1>Room</h1>
+                    <input  type="text" id="room_input" placeholder="Room a-z, A-Z, 0-9, -, _" autocomplete="new-password">
+                    <p class="room_input_error_message" id="room_input_error_message"></p>
+                </div>
+                
+    
+                <div class="button_container">
+                    <button id="login_button">Login</button>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="chat_container" id="chat_container">
+            <div class="chat_nav_container">
+                <div class="button_container">
+                    <button id="logout_button">Logout</button>
+                </div>
+            </div>
+
+            <div class="chat_content_container" id="chat_content_container">
+    
+            </div>
+    
+            <div class="send_text_container">
+                <div class="send_text_content">
+                    <input type="text" id="text_input" placeholder="Text here" autocomplete="new-password">
+                    <button id="send_button">Send Message</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+</html>
