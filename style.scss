@@ -332,6 +332,7 @@
                 .message_container{
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
                     width: 100%;
                     margin-bottom: 1.7rem;
                     .message_user_container{
@@ -341,18 +342,12 @@
                         align-items: center;
                         flex-direction: row;
                         padding-left: 1rem;
-                        .message_user_box{
-                            height: 50px;
-                            border-radius: 50px;
-                            width: 50px;
-                            background-color: white;
-                        }
                         .message_username {
                             font-family: 'Open Sans', sans-serif;
-                            color: rgb(166, 245, 166);
+                            color: white;
                             font-size: 16px;
                             margin-top: unset;
-                            margin-left: 1rem;
+                            margin-left: 0rem;
                             text-align: center;
                         }
                     }
@@ -368,6 +363,15 @@
                         margin-top: 1rem;
                     }
     
+                    .message_text_private{
+                        max-width: 96%;
+                        padding: 0.8rem 1rem;
+                        font-size: 18px;
+                        font-family: 'Open Sans', sans-serif;
+                        line-height: 2rem;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                    }
                     
                 }
             }

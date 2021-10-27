@@ -6,6 +6,7 @@
           box-sizing: border-box;
 }
 
+/* Vorgabe für alle Container [Desktop Version] */
 .all_container {
   display: -ms-grid;
   display: grid;
@@ -18,6 +19,7 @@
   overflow: hidden;
 }
 
+/* Vorgabe für Login Container [Desktop Version] */
 .all_container .login_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +49,7 @@
   margin: auto auto;
 }
 
+/* Vorgabe für Login Container User und Room Textausgabe [Desktop Version] */
 .all_container .login_container .login_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +70,7 @@
   color: white;
 }
 
+/* Vorgabe für Login Container: Textfelder [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +88,7 @@
   width: 100%;
 }
 
+/* Vorgabe für Login Container: Textfelder Eingabe [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container input {
   margin-top: .5rem;
   height: 2.3rem;
@@ -99,22 +104,12 @@
   padding: 1rem;
 }
 
-.all_container .login_container .login_content .login_inputs_container input::-webkit-input-placeholder {
-  color: #b6b6b6;
-}
-
-.all_container .login_container .login_content .login_inputs_container input:-ms-input-placeholder {
-  color: #b6b6b6;
-}
-
-.all_container .login_container .login_content .login_inputs_container input::-ms-input-placeholder {
-  color: #b6b6b6;
-}
-
+/* Vorgabe für Login Container: Textfelder Placeholder [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container input::placeholder {
   color: #b6b6b6;
 }
 
+/* Vorgabe für Login Container: h1 Elemente [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -122,15 +117,18 @@
   font-size: 1.8rem;
 }
 
+/* Vorgabe für Login Container: p Elemente [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container p {
   margin-top: .4rem;
   color: #ffbb00;
 }
 
+/* Vorgabe für Login Container: Textfelder Placeholder [Desktop Version] */
 .all_container .login_container .login_content .login_inputs_container_last {
   margin-top: 2rem;
 }
 
+/* Vorgabe für Login Container: Textfelder Placeholder [Desktop Version] */
 .all_container .login_container .login_content .button_container {
   width: 100%;
   display: -webkit-box;
@@ -142,6 +140,7 @@
   margin-top: 2.5rem;
 }
 
+/* Vorgabe für Login Container: Login Button [Desktop Version] */
 .all_container .login_container .login_content .button_container button {
   background-color: #F33B5F;
   font-family: 'Open Sans', sans-serif;
@@ -152,12 +151,15 @@
   font-weight: 800;
   border-style: unset;
 }
-
+/* Vorgabe für Login Container: Login Button hover [Desktop Version] */
 .all_container .login_container .login_content .button_container button:hover {
   cursor: pointer;
   background-color: #f15070;
 }
 
+/*Chat */
+
+/* Vorgabe für Chat Container [Desktop Version] */
 .all_container .chat_container {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -184,11 +186,14 @@
   background: linear-gradient(180deg, #253A4B 0%, #1b2a36 100%);
 }
 
+/* Vorgabe für Chat Container: Header [Desktop Version] */
 .all_container .chat_container .chat_nav_container {
   height: 50px;
   max-height: 50px;
   background: #253A4B;
+  margin-right: 30px;
   color: white;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,10 +202,37 @@
           align-items: center;
 }
 
+/* Vorgabe für Chat Container: Header Anzeige des Raumnamens [Desktop Version] */
+.all_container .chat_container .chat_nav_container .room_text {
+font-size: 50px;
+position: absolute;
+left: 10px;
+}
+
+/* Vorgabe für Chat Container: Zeitausgabe für Nachrichten [Desktop Version] */
+.all_container .chat_container .chat_content_container .message_time {
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Vorgabe für Chat Container: Datumausgabe für Nachrichten [Desktop Version] */
+.all_container .chat_container .chat_content_container .message_date {
+color: white;
+font-size: 12px;
+margin-left: 5px;
+margin-top: 0px;
+}
+
+/* Vorgabe für Chat Container: Logout Button [Desktop Version] */
 .all_container .chat_container .chat_nav_container .button_container button {
-  height: 100%;
-  width: 200px;
-  background-color: #581e29;
+  height: 50%;
+  width: 100px;
+  background-color: rgba(170, 0, 0, 0.726);
+  border-radius: 5px;
+  right: 0;
+  top: 15px;
+  position: absolute;
   border-style: none;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -208,81 +240,49 @@
   font-weight: 800;
 }
 
+/* Vorgabe für Chat Container: Logout Button [Desktop Version] */
 .all_container .chat_container .chat_nav_container .button_container button:hover {
   cursor: pointer;
   background-color: #3d121a;
 }
 
+/* Vorgabe für Chat Container: Hintergrund Nachrichtenbereich [Desktop Version] */
 .all_container .chat_container .chat_content_container {
   background: #101d27;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
+/* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten [Desktop Version] */
 .all_container .chat_container .chat_content_container::-webkit-scrollbar {
   background-color: transparent;
   width: 10px;
 }
 
+/* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten [Desktop Version] */
 .all_container .chat_container .chat_content_container::-webkit-scrollbar-thumb {
   background-color: #253A4B;
   width: 5px;
   border-radius: 15px;
 }
 
+/* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten: hover [Desktop Version] */
 .all_container .chat_container .chat_content_container::-webkit-scrollbar-thumb:hover {
   background-color: #3b5264;
 }
 
+/* Vorgabe für Chat Container: Nachrichtencontainer [Desktop Version] */
 .all_container .chat_container .chat_content_container .message_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 100%;
   margin-bottom: 1.7rem;
 }
-
-.all_container .chat_container .chat_content_container .message_container .message_user_container {
-  width: 165px;
-  min-width: 165px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.all_container .chat_container .chat_content_container .message_container .message_user_container .message_user_box {
-  height: 50px;
-  border-radius: 50px;
-  width: 50px;
-  background-color: white;
-}
-
-.all_container .chat_container .chat_content_container .message_container .message_user_container .message_username {
-  font-family: 'Open Sans', sans-serif;
-  color: #a6f5a6;
-  font-size: 20px;
-  margin-top: .45rem;
-  text-align: center;
-}
-
-.all_container .chat_container .chat_content_container .message_container .message_text {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  padding: 1.5rem;
-  margin-left: -.5rem;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 2rem;
-}
-
+.all_container .chat_container .chat_content_container .self_message{
+  direction: rtl;
+} 
+/* Vorgabe für Chat Container: Private Nachrichten [Desktop Version] */
 .all_container .chat_container .chat_content_container .message_container .message_text_private {
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
@@ -292,8 +292,65 @@
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   line-height: 2rem;
+  max-width: 60%;
 }
 
+/* Vorgabe für Chat Container: Container für eine einzelne Nachricht (Benutzername, Chatnachricht, etc.) [Desktop Version] */
+.all_container .chat_container .chat_content_container .message_container .message_user_container {
+  position: relative;
+  width: 165px;
+  min-width: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.all_container .chat_container .chat_content_container .message_container .message_user_container .message_date{
+  font-family: 'Open Sans', sans-serif;
+  opacity: .2;
+}
+.all_container .chat_container .chat_content_container .message_container .message_user_container .message_time{
+  font-family: 'Open Sans', sans-serif;
+  opacity: .2;
+}
+/* Vorgabe für Chat Container: Benutzername der Nachricht [Desktop Version] */
+.all_container .chat_container .chat_content_container .message_container .message_user_container .message_username {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: .45rem;
+  text-align: center;
+}
+
+/* Vorgabe für Chat Container: Nachrichteninhalt [Desktop Version] */
+.all_container .chat_container .chat_content_container .message_container bdi .message_text {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.all_container .chat_container .chat_content_container .message_container .message_text {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin-left: -.5rem;
+  font-size: 18px;
+  max-width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2rem;
+}
+
+
+/* Vorgabe für Chat Container: Nachrichtensende-Container unten, ganz [Desktop Version] */
 .all_container .chat_container .send_text_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,25 +363,31 @@
           justify-content: center;
   height: 80px;
   max-height: 80px;
-  background: #253A4B;
-  background: -webkit-gradient(linear, left top, left bottom, from(#253A4B), to(#1b2a36));
-  background: linear-gradient(180deg, #253A4B 0%, #1b2a36 100%);
+  background-color: #253A4B;
 }
 
+/* Vorgabe für Chat Container: Nachrichtensende-Container unten, innerer Bereich [Desktop Version] */
 .all_container .chat_container .send_text_container .send_text_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  
   width: 95%;
+  background-color: #253A4B;
 }
 
+/* Vorgabe für Chat Container: Nachrichtensende-Container unten: Texteingabe für Nachrichten [Desktop Version] */
 .all_container .chat_container .send_text_container .send_text_content input {
-  width: 90%;
+  width: 80%;
+  margin-right: 1rem;
   height: 60%;
+  border-radius: 50px;
+  opacity: 0.5;
   font-size: 20px;
   outline: none;
   border-style: none;
@@ -332,26 +395,34 @@
   padding: 1rem;
 }
 
+/* Vorgabe für Chat Container: Nachrichtensende-Container unten: "Send Message" Button [Desktop Version] */
 .all_container .chat_container .send_text_container .send_text_content button {
   width: 10%;
   height: 60%;
   min-width: 200px;
+  border-radius: 50px;
   padding: 0 1rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: bold;
-  background-color: #F33B5F;
+  background-color: #F33B5F; /* Ändert die Farbe des Senden Buttons ohne auf den Senden Button zu gehen*/
   outline: none;
   border-style: none;
   color: white;
 }
 
+/* Vorgabe für Chat Container: Nachrichtensende-Container unten: "Send Message" Button: hover [Desktop Version] */
 .all_container .chat_container .send_text_container .send_text_content button:hover {
   cursor: pointer;
   background-color: #f15070;
 }
 
+
+/*Alles Rund um Mobile, (wenn Breite kleiner als 1200px beträgt) */
+/* Muss am Ende nochmal angepasst werden */
 @media (max-width: 1200px) {
+  
+  /* Vorgabe für Login Container [Mobile Version] */
   .all_container .login_container {
     width: 100%;
     height: 100%;
@@ -359,9 +430,13 @@
             box-shadow: unset;
     border-radius: unset;
   }
+
+  /* Vorgabe für Login Container: Textfelder Eingabe [Mobile Version] */
   .all_container .login_container .login_content .login_inputs_container input {
     width: 90%;
   }
+
+  /* Vorgabe für Chat Container [Mobile Version] */
   .all_container .chat_container {
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
@@ -388,6 +463,8 @@
     background: linear-gradient(180deg, #253A4B 0%, #1b2a36 100%);
     overflow: hidden;
   }
+
+  /* Vorgabe für Chat Container: Header [Mobile Version] */
   .all_container .chat_container .chat_nav_container {
     height: 50px;
     max-height: 50px;
@@ -400,37 +477,33 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .all_container .chat_container .chat_nav_container .button_container button {
-    height: 100%;
-    width: 200px;
-    background-color: #581e29;
-    border-style: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-  }
-  .all_container .chat_container .chat_nav_container .button_container button:hover {
-    cursor: pointer;
-    background-color: #3d121a;
-  }
+
+  /* Vorgabe für Chat Container: Hintergrund Nachrichtenbereich [Mobile Version] */
   .all_container .chat_container .chat_content_container {
     background: #101d27;
     overflow-x: hidden;
     overflow-y: scroll;
   }
+
+  /* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten [Mobile Version] */
   .all_container .chat_container .chat_content_container::-webkit-scrollbar {
     background-color: transparent;
     width: 10px;
   }
+
+  /* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten [Mobile Version] */
   .all_container .chat_container .chat_content_container::-webkit-scrollbar-thumb {
     background-color: #253A4B;
     width: 5px;
     border-radius: 15px;
   }
+
+  /* Vorgabe für Chat Container: Scrollbar an der Seite der Seite für nachrichten: hover [Mobile Version] */
   .all_container .chat_container .chat_content_container::-webkit-scrollbar-thumb:hover {
     background-color: #3b5264;
   }
+
+  /* Vorgabe für Chat Container: Nachrichtencontainer [Mobile Version] */
   .all_container .chat_container .chat_content_container .message_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,46 +514,59 @@
             flex-direction: column;
     width: 100%;
     margin-bottom: 1.7rem;
+    align-items: flex-start;
   }
+
+  /* Vorgabe für Chat Container: Container für eine einzelne Nachricht (Benutzername, Chatnachricht, etc.) [Mobile Version] */
   .all_container .chat_container .chat_content_container .message_container .message_user_container {
-    width: 50px;
+    width: 100%;
     min-width: 165px;
+    flex-direction: row;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
     padding-left: 1rem;
   }
-  .all_container .chat_container .chat_content_container .message_container .message_user_container .message_user_box {
-    height: 50px;
-    border-radius: 50px;
-    width: 50px;
-    background-color: white;
-  }
+  
+
+  /* Vorgabe für Chat Container: Benutzername der Nachricht [Mobile Version] */
   .all_container .chat_container .chat_content_container .message_container .message_user_container .message_username {
     font-family: 'Open Sans', sans-serif;
-    color: #a6f5a6;
+    color: white;
     font-size: 16px;
     margin-top: unset;
-    margin-left: 1rem;
-    text-align: center;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    text-align: unset;
   }
+
+  /* Vorgabe für Chat Container: Nachrichteninhalt [Mobile Version] */
   .all_container .chat_container .chat_content_container .message_container .message_text {
     color: black;
-    max-width: 96%;
     padding: 0.8rem 1rem;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     line-height: 2rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 1rem;
+    max-width: unset;
   }
+
+  .all_container .chat_container .chat_content_container .message_container .message_text_private {
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    max-width: unset;
+  }
+
+  /* Vorgabe für Chat Container: Nachrichtensende-Container unten, ganz [Mobile Version] */
   .all_container .chat_container .send_text_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,6 +583,8 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#253A4B), to(#1b2a36));
     background: linear-gradient(180deg, #253A4B 0%, #1b2a36 100%);
   }
+
+  /* Vorgabe für Chat Container: Nachrichtensende-Container unten, innerer Bereich [Mobile Version] */
   .all_container .chat_container .send_text_container .send_text_content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -507,19 +595,26 @@
     height: 100%;
     width: 95%;
   }
+
+  /* Vorgabe für Chat Container: Nachrichtensende-Container unten: Texteingabe für Nachrichten [Mobile Version] */
   .all_container .chat_container .send_text_container .send_text_content input {
     width: 90%;
     height: 60%;
     font-size: 20px;
+    opacity: 0.5;
     outline: none;
+    border-radius: 100px;
     border-style: none;
     font-family: 'Open Sans', sans-serif;
     padding: 1rem;
   }
+  
+ /* Vorgabe für Chat Container: Nachrichtensende-Container unten: "Send Message" Button [Mobile Version] */
   .all_container .chat_container .send_text_container .send_text_content button {
-    width: 10%;
+    width: 5%;
     height: 60%;
     min-width: 200px;
+    border-radius: 100px;
     padding: 0 1rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -529,9 +624,25 @@
     border-style: none;
     color: white;
   }
+
+  /* Vorgabe für Chat Container: Nachrichtensende-Container unten: "Send Message" Button: hover [Mobile Version] */
   .all_container .chat_container .send_text_container .send_text_content button:hover {
     cursor: pointer;
     background-color: #f15070;
   }
+
+  .all_container .chat_container .chat_content_container .message_container .message_user_container .message_date{
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    opacity: .2;
+  }
+  .all_container .chat_container .chat_content_container .message_container .message_user_container .message_time{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 4px;
+    margin-right: 1rem;
+    opacity: .2;
+  }
 }
-/*# sourceMappingURL=style.css.map */
